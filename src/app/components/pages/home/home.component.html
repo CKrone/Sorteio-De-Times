@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="time-one">
+    <form [formGroup]="formTimes">
+      <input
+        class="first-input"
+        placeholder="Nome do Jogador"
+        formControlName="jogadorUm"
+        #jogadorUm
+        type="text"
+      />
+      <input
+        placeholder="Nome do Jogador"
+        formControlName="jogadorDois"
+        #jogadorDois
+        type="text"
+      />
+      <input
+        placeholder="Nome do Jogador"
+        formControlName="jogadorTres"
+        #jogadorTres
+        type="text"
+      />
+      <input
+        placeholder="Nome do Jogador"
+        formControlName="jogadorQuatro"
+        #jogadorQuatro
+        type="text"
+      />
+      <input
+        placeholder="Nome do Jogador"
+        formControlName="jogadorCinco"
+        #jogadorCinco
+        type="text"
+      />
+      <input
+        placeholder="Nome do Jogador"
+        formControlName="jogadorSeis"
+        #jogadorSeis
+        type="text"
+      />
+      <input
+        placeholder="Nome do Jogador"
+        formControlName="jogadorSete"
+        #jogadorSete
+        type="text"
+      />
+      <input
+        placeholder="Nome do Jogador"
+        formControlName="jogadorOito"
+        #jogadorOito
+        type="text"
+      />
+      <input
+        placeholder="Nome do Jogador"
+        formControlName="jogadorNove"
+        #jogadorNove
+        type="text"
+      />
+      <input
+        placeholder="Nome do Jogador"
+        formControlName="jogadorDez"
+        #jogadorDez
+        type="text"
+      />
+      <button
+        type="button"
+        (click)="
+          time(
+            jogadorUm.value,
+            jogadorDois.value,
+            jogadorTres.value,
+            jogadorQuatro.value,
+            jogadorCinco.value,
+            jogadorSeis.value,
+            jogadorSete.value,
+            jogadorOito.value,
+            jogadorNove.value,
+            jogadorDez.value
+          )
+        "
+        [disabled]="formTimes.invalid"
+      >
+        Sortear
+      </button>
+      <button type="button" *ngIf="timeDois.length > 0" (click)="limpar()">
+        Limpar Times
+      </button>
+    </form>
+  </div>
+  <div class="resultado">
+    <ul *ngFor="let item of timeUm">
+      <li>{{ item }}</li>
+    </ul>
+    <div class="resultado-time-dois">
+      <ul *ngFor="let item2 of timeDois">
+        <li>{{ item2 }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
