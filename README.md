@@ -2,9 +2,12 @@
 
 <span>Link do Projeto no GitHubPages</span> <a href="https://ckrone.github.io/Sorteio-De-Times/" target="blank" />Sorteio de Times</a>
 
-<h3>Ainda em desenvolvimento</h3>
+<!-- <h3>Ainda em desenvolvimento</h3> -->
 
 
 <h2>Sobre:</h2>
 
 <p>Gosto muito de futebol. Aos sábados jogo Society com alguns colegas. Sempre perdemos tempo para montar os times então pensando nisso, como estou estudando Angular resolvi desenvolver uma aplicação para sortear os times</p>
+
+
+<p> A aplicação consiste em fazer um sorteio e dividir em dois times.</p>
